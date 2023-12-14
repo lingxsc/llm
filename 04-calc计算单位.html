@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* :root代表的是html标签 */
+      :root {
+        --light-bg-color: green;
+        --light-color: black;
+
+        --dark-bg-color: red;
+        --dark-color: white;
+      }
+      .box {
+        /* 视口的宽度的一半 + 200px */
+        width: calc(50vw - 200px);
+        height: 50vh;
+        background-color: skyblue;
+      }
+
+      .myh2 {
+        background-color: var(--dark-bg-color);
+        margin-bottom: 50px;
+        color: var(--dark-color);
+      }
+
+      .myp {
+        background-color: var(--dark-bg-color);
+        margin-bottom: 50px;
+        color: var(--dark-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h2 class="myh2">h2</h2>
+    <p class="myp">p</p>
+  </body>
+</html>

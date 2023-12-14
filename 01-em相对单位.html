@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        /* 20px = 1rem */
+        font-size: 20px;
+      }
+      .parent {
+        font-size: 30px;
+      }
+      .child {
+        /* 相对于父亲字体大小：1em = 30px  2em = 60*/
+        font-size: 2em;
+        height: 40px;
+        border: 1px solid #ccc;
+        /* 相对于自身字体大小 1em = 60px  */
+        width: 2em;
+      }
+
+      .box {
+        margin-top: 200px;
+        /* rem:相对的是根（html）元素的字体大小 */
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        em: 在 font-size 中使用是相对于父元素的字体大小，
+        在其他属性(width)中使用是相对于自身的字体大小。
+     -->
+    <div class="parent">
+      <div class="child">八戒</div>
+    </div>
+    <div class="box">孙悟空</div>
+  </body>
+</html>

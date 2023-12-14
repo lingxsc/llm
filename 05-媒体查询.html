@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+      a {
+        color: red;
+        font-size: 16px;
+      }
+      /* 当屏幕分辨率大于768像素时，应用下面的样式 */
+      @media screen and (min-width: 768px) {
+        body {
+          background-color: green;
+        }
+      }
+      /* 当屏幕分辨率大于900像素时，应用下面的样式 */
+      @media screen and (min-width: 900px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      /* 当屏幕分辨率大于1024像素时，应用下面的样式 */
+      @media screen and (min-width: 1024px) {
+        body {
+          background-color: skyblue;
+        }
+      }
+
+      /* 当屏幕分辨率大于900小于1200像素时，应用下面的样式 */
+      @media screen and (min-width: 900px) and (max-width: 1200px) {
+        a {
+          color: purple;
+          font-size: 26px;
+        }
+      }
+
+      /* 当屏幕分辨率小于500像素时，应用下面的样式 */
+      @media screen and (max-width: 500px) {
+        a {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="">百度</a>
+  </body>
+</html>
